@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # ChangMao documentation build configuration file, created by
-# sphinx-quickstart on Mon Mar 07 18:01:10 2016.
+# sphinx-quickstart on Mon Mar 07 18:19:45 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.

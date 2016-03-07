@@ -1,12 +1,22 @@
-欢迎使用长矛帮助文档
-====================
+.. ChangMao documentation master file, created by
+   sphinx-quickstart on Mon Mar 07 18:19:45 2016.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-长矛是安络科技自主研发的一款自动化渗透测试系统，也是国内第一款自动化渗透测试系统。内部集成多种渗透测试方法，如信息搜集、漏洞扫描、漏洞验证、暴力破解、社会工程、调查取证、大数据分析查询等，可以一键式渗透，全方位掌控企业信息安全。
+Welcome to ChangMao's documentation!
+====================================
 
-目录
-====
+Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   backup
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

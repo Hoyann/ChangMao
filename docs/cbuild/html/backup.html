@@ -58,7 +58,7 @@
 <div class="section" id="id2">
 <h2>备份数据<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>备份包含所有需要将长矛还原到某个特定的状态，例如应用程序设置和项目。唯一不会迁移的是软件版本。长矛实例将继续使用当前版本。</p>
-<p>备份长矛时，所有数据库内容压缩成ZIP文件并存储在 <code class="docutils literal"><span class="pre">/path/to/metasploit/apps/pro/backups</span></code> 路径中。将长矛还原到特定的备份时，不会覆盖这些文件。因此只有手动删除或卸载长矛，他们才可用。</p>
+<p>备份长矛时，所有数据库内容压缩成ZIP文件并存储在 <code class="docutils literal"><span class="pre">/path/to/Changmao/apps/pro/backups</span></code> 路径中。将长矛还原到特定的备份时，不会覆盖这些文件。因此只有手动删除或卸载长矛，他们才可用。</p>
 <p>若要备份长矛数据:</p>
 <p>1、转到“管理”&#8211;&gt;“全局设置”</p>
 <p>2、选择“备份”选项卡</p>
@@ -73,24 +73,24 @@
 <img alt="_images/4.png" src="_images/4.png" />
 </div>
 <div class="section" id="id3">
-<h2>还原备份<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>恢复备份<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>还原将长矛服务器恢复到备份文件你内获取的状态。备份文件是独立的平台，可将数据从一个操作系统还原到另一个没有任何问题的操作系统。</p>
-<p>还原备份文件时，备份文件内的数据将覆盖当前长矛实例中的所有内容，包括用户帐户、 战利品、 报告和日志。所有不在备份文件中的数据将丢失。</p>
+<p>还原备份文件时，备份文件内的数据将覆盖当前长矛实例中的所有内容，包括用户帐户、 报告和日志。所有不在备份文件中的数据将丢失。</p>
 <p>要还原备份，则必须停止所有长矛进程以修改数据库。还原数据库后，长矛服务将重启且可像往常一样使用长矛。不用担心。无需手动关闭流程，我们会在运行还原脚本时关闭它。</p>
 <p><strong>在Linux系统上恢复</strong></p>
 <p>若要还原备份，需从诊断的shell程序运行脚本。</p>
 <p>如果正还原Linux系统上的 Windows 备份，需在还原文件前更改可执行的ZIPA文件权限。若要更改文件的权限，请运行以下命令:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo chmod +x /opt/metasploit/apps/pro/backups/&lt;backup file&gt;.zip.
+<div class="highlight-python"><div class="highlight"><pre>sudo chmod +x /opt/Changmao/apps/pro/backups/&lt;backup file&gt;.zip.
 </pre></div>
 </div>
 <p>若要还原 Linux 系统上的备份:</p>
 <p>1、打开终端
 2、cd 切换至长矛目录:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ cd /opt/metasploit
+<div class="highlight-python"><div class="highlight"><pre>$ cd /opt/Changmao
 </pre></div>
 </div>
 <p>3、sudo 运行diagnostic shell:</p>
-<div class="highlight-python"><div class="highlight"><pre>/opt/metasploit$ sudo ./diagnostic_shell
+<div class="highlight-python"><div class="highlight"><pre>/opt/Changmao$ sudo ./diagnostic_shell
 </pre></div>
 </div>
 <p>4、bash命令行出现提示时，运行还原脚本:</p>
@@ -103,14 +103,6 @@
 <img alt="_images/6.png" src="_images/6.png" />
 <p>7、当出现确认消息时，请输入 Y 以还原备份。备份过程可能需要几分钟。完成后，将看到&#8221;恢复完成&#8221;消息。</p>
 <p>8、输入 exit 关闭诊断的shell。</p>
-<p><strong>在Windows系统上恢复</strong></p>
-<p>1、转到“C:/长矛”的目录并运行还原的bat脚本。
-2、如果长矛服务仍在运行，会提示停止运行，输入 Y 继续。</p>
-<img alt="_images/7.png" src="_images/7.png" />
-<p>3、当显示备份列表时，请输入需要还原的备份文件名。</p>
-<img alt="_images/8.png" src="_images/8.png" />
-<p>4、当出现确认消息时，请输入 Y 以还原备份。备份过程可能需要几分钟。完成后，将看到&#8221;恢复完成&#8221;消息。</p>
-<p>5、退出命令提示符。</p>
 <p><strong>还原到长矛较早版本</strong></p>
 <p>我们仅支持转发兼容性，这意味着可将备份还原到长矛的相同版本或更新版本的。例如，如果在长矛4.11.6 上创建备份文件，则无法还原较早版本的文件，如长矛4.11.5 。但是可还原到新的版本，如 长矛4.11.7。</p>
 <p>要检查备份版本，请转到备份区并在长矛版本列中查找。</p>
@@ -122,7 +114,7 @@
 </div>
 <div class="section" id="id5">
 <h2>查找备份文件<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<p>备份文件位于 <code class="docutils literal"><span class="pre">/path/to/metasploit/apps/pro/backups</span></code></p>
+<p>备份文件位于 <code class="docutils literal"><span class="pre">/path/to/Changmao/apps/pro/backups</span></code></p>
 <p>若打算卸载 长矛，应将此目录中的备份文件复制到计算机上的不同位置。或如果想与另一个长矛实例共享备份文件，可从此位置复制。</p>
 </div>
 </div>
@@ -137,7 +129,7 @@
   <ul>
 <li><a class="reference internal" href="#">备份与恢复</a><ul>
 <li><a class="reference internal" href="#id2">备份数据</a></li>
-<li><a class="reference internal" href="#id3">还原备份</a></li>
+<li><a class="reference internal" href="#id3">恢复备份</a></li>
 <li><a class="reference internal" href="#id4">备份后重新登录</a></li>
 <li><a class="reference internal" href="#id5">查找备份文件</a></li>
 </ul>
